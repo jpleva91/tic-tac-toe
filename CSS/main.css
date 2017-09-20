@@ -1,0 +1,47 @@
+* {
+
+}
+
+#clear-btn {
+	width: 360px;
+	position: relative;
+	left: 50%;
+	margin-left: -180px;
+	top: 5px;
+	height: 36px;
+	border-radius: 5px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#grid {
+	width: 400px;
+	position: relative;
+	left: 50%;
+	margin-left: -200px;
+	border: 1px solid red;
+}
+
+
+td {
+	width: 33.33%;
+	height: 33.33%;
+	position: relative;
+	border: 5px solid black;
+}
+
+td:after {
+	content: '';
+	display: block;
+	margin-top: 100%;
+}
+
+td.x-move {
+	content: url(IMG/x_move.svg);
+}
+
+#box-1 {
+	background-color: red;
+}
