@@ -1,0 +1,13 @@
+ClickBox
+	
+	Build Objects which hold properties of each individual box. 
+	Each box should inherit the prototype this Object.
+		$updateGameState();
+		$endGame();
+		$placeMarker();
+		$checkWinner();
+		
+
+
+CheckWinner
+WinningCombinations

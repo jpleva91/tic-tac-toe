@@ -1,6 +1,12 @@
 /*	JS LOADED  */
 console.log("JS is loaded!");
 
+/* CONSTRUCTORS */
+
+	function $Box(selector) {
+		this.selector = selector;
+	}
+
 /*	JQUERY LOADED  */
 $(document).ready(function() {
 	console.log("Ready to go!");
@@ -130,19 +136,52 @@ $(document).ready(function() {
 	};
 
 	/*	GAME CONTROLLER  */
+	function $clickValidator($this) {
+		if($($this).hasClass('x-move') || $($this).hasClass('o-move')) {
+			$lastGameState = $lastGameState -1;
+			return;
+		}	if(!$marker) {
+			$($this).toggleClass('o-move');
+		} else {
+			$($this).toggleClass('x-move');
+		}
+	};
+
+	$Box.prototype = {
+		$updateGameState: function(){
+
+		},
+		$endGame: function (){
+
+		},
+		$placeMarker: function(){
+
+		},
+		$clickValidator: function(){
+			console.log(this);
+		if($(this.selector).hasClass('x-move') || $(this.selector).hasClass('o-move')) {
+			$lastGameState = $lastGameState -1;
+			return;
+		}	if(!$marker) {
+			$(this.selector).toggleClass('o-move');
+		} else {
+			$(this.selector).toggleClass('x-move');
+		}
+		},
+		$checkWinner: function(){
+			
+		}
+	}
+
+		var clickBoxOne = new $Box("#box-1");
+		$()
+
 		var $clickBoxOne = 
 		$('#box-1').on('click', function() {
 			$updateGameState();
 			$endGame();
 		 	$placeMarker();
-		 	if($('#box-1').hasClass('x-move') || $('#box-1').hasClass('o-move')){
-		 		$lastGameState = $lastGameState -1;
-		 		return;
-		 	}	if(!$marker){
-			 		$('#box-1').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-1').toggleClass('x-move').removeClass('o-move');
-			}
+		 	$clickValidator(this);
 			$checkWinner();
 		});
 
@@ -151,14 +190,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-2').hasClass('x-move') || $('#box-2').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-2').toggleClass('o-move').removeClass('x-move');
-			}	else {
-					$('#box-2').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		});
 
@@ -167,14 +199,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-3').hasClass('x-move') || $('#box-3').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			}	if (!$marker) {
-					$('#box-3').toggleClass('o-move').removeClass('x-move');
-			}	else {
-					$('#box-3').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		});
 
@@ -183,14 +208,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-4').hasClass('x-move') || $('#box-4').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-4').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-4').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})	
 
@@ -199,14 +217,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-5').hasClass('x-move') || $('#box-5').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-5').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-5').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})	
 
@@ -215,14 +226,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-6').hasClass('x-move') || $('#box-6').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-6').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-6').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})	
 
@@ -231,14 +235,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-7').hasClass('x-move') || $('#box-7').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-7').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-7').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})	
 
@@ -247,14 +244,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-8').hasClass('x-move') || $('#box-8').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-8').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-8').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})	
 
@@ -263,14 +253,7 @@ $(document).ready(function() {
 			$updateGameState();
 			$endGame();
 			$placeMarker();
-			if($('#box-9').hasClass('x-move') || $('#box-9').hasClass('o-move')) {
-				$lastGameState = $lastGameState -1;
-				return;
-			} if (!$marker) {
-					$('#box-9').toggleClass('o-move').removeClass('x-move');
-			} else {
-					$('#box-9').toggleClass('x-move').removeClass('o-move');
-			}
+			$clickValidator(this);
 			$checkWinner();
 		})
 
