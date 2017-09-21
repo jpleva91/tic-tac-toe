@@ -38,10 +38,115 @@ td:after {
 	margin-top: 100%;
 }
 
-td.x-move {
-	content: url(IMG/x_move.svg);
+
+#box-1.x-move{
+	background: url(../IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
 }
 
-#box-1 {
-	background-color: red;
+#box-1.o-move{
+	background: url(../IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
 }
+
+#box-2.x-move {
+	background: url(../IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-2.o-move {
+	background: url(../IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-3.x-move {
+	background: url(../IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-3.o-move {
+	background: url(../IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-4.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-4.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-5.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-5.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-6.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-6.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-7.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-7.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-8.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-8.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+#box-9.x-move {
+	background: url(..IMG/x_move.svg);
+	background-color: red;
+	background-size: 100%;
+}
+
+#box-9.o-move {
+	background: url(..IMG/o_move.svg);
+	background-color: cyan;
+	background-size: 100%;
+}
+
+
+
+
